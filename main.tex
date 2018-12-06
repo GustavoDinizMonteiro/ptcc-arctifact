@@ -12,18 +12,25 @@
 
 \section{Introduction}
 
-Master: Francisco Vilar Brasileiro \\ \href{fubica@computacao.ufcg.edu.br}
+Master: Francisco Vilar Brasileiro \href{fubica@computacao.ufcg.edu.br}
 
 \section{Abstract}
-The objective of this work is to present a way of justice implementation and incentive to share resources in P2P systems based only on the direct reciprocity model called the Favors Network. This model is designed for small and medium-sized networks and for scenarios where repeated interaction between peers is more likely and problems with non-cooperative members who compromise justice and resource willingness for participatory members who need and make members leave the network, in addition to everything the solution is very light, is designed to be an element pluggable and does not involve any trust issues, using first hand knowledge gained by each member through direct interaction with other peers.
+The objective of this work is to present a form of justice implementation and incentive to share resources in P2P systems, initially using the direct reciprocity model called the Favors Network. The model that will be used is designed for small and medium-sized networks and for scenarios where repeated peer interaction is most likely, where problems with uncooperative members that compromise justice and resource availability for participatory members who need and who do members get out of the network, moreover, focuses on being a lightweight solution and designed to be a connectable and adaptable element to the federation provider, using firsthand knowledge gained by each member through direct interaction with other peers.
 
 \section{The Problem}
-Organizations with varying and peak demand patterns often resort to public clouds to meet unexpected or short-term needs and avoid failures to meet business demands and quality of service goals. However, outside of peak times, the resources belonging to these organizations may become inactive, which is a loss of efficiency. Under these circumstances, selling these surplus resources may be an interesting option for large private cloud providers, but not for smaller private providers.
+Organizations with varying demand patterns and utilization peaks often resort to public clouds to meet unexpected or short-term needs, thus escaping failures in meeting business demands and quality of service goals.
+However, outside of peak times, the resources belonging to these organizations may become inactive, which is a loss of efficiency.
+
+Under these circumstances, selling these surplus resources may be an interesting option for large private cloud providers, but not for smaller private providers.
+
+One alternative that small and medium-sized private cloud providers may find advantageous is to collaboratively exchange idle capacity on a peer-to-peer (P2P) basis within a federation. In this case, each provider in the federation acts both as a resource provider (outside peak hours) and as a resource consumer (during peak times). In particular private cloud providers, because of the usually limited amount of own resources, would benefit greatly from this exchange, thus allowing them to access a larger pool of resources when local demand is too high and can not be met using only local resources and resources that simply do not exist locally.
 
 \section{Objectives}
-The objective of this work is the implementation of a system of provisioning a favors network, which functions as a guarantor of justice, and which will function in a pluggable way, both in the sense that it can be added to a federation provider as a component that provides the network of favors as well as in the sense of perpetuating the use of various implementations of reciprocity algorithms.
+The objective of this work is the implementation of a system that allows the creation of a network of favors, which works as a guarantor of justice, and that will work in a connectable way, giving generous support to different federation providers through specific connection modules for each provider, who will act as adapters, and following one of the justice algorithms for favors networks, also implemented as modules, so that the system is configurable and adaptable to the model of justice and to the federation provider of those who propose to use it , as follows in the following architecture diagram.
 
+\begin{center}
 \includegraphics[scale=0.4]{./image/NOF-architecture-generic.png}
+\end{center}
 
 \section{Schedule}
 
