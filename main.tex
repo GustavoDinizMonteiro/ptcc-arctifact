@@ -14,8 +14,12 @@
 
 Master: Francisco Vilar Brasileiro \href{fubica@computacao.ufcg.edu.br}
 
+Modality: project portfolio
+
 \section{Abstract}
-The objective of this work is to present a form of justice implementation and incentive to share resources in P2P systems, initially using the direct reciprocity model called the Favors Network. The model that will be used is designed for small and medium-sized networks and for scenarios where repeated peer interaction is most likely, where problems with uncooperative members that compromise justice and resource availability for participatory members who need and who do members get out of the network, moreover, focuses on being a lightweight solution and designed to be a connectable and adaptable element to the federation provider, using firsthand knowledge gained by each member through direct interaction with other peers.
+The objective of this work is to present a form of justice implementation and incentive to share resources in P2P systems, initially using the direct reciprocity model called the Favors Network.
+
+The model that will be used is designed for small and medium-sized networks and for scenarios where repeated peer interaction is most likely, where problems with uncooperative members that compromise justice and resource availability for participatory members who need and who do members get out of the network, moreover, focuses on being a lightweight solution and designed to be a connectable and adaptable element to the federation provider, using firsthand knowledge gained by each member through direct interaction with other peers.
 
 \section{The Problem}
 Organizations with varying demand patterns and utilization peaks often resort to public clouds to meet unexpected or short-term needs, thus escaping failures in meeting business demands and quality of service goals.
@@ -26,7 +30,7 @@ Under these circumstances, selling these surplus resources may be an interesting
 One alternative that small and medium-sized private cloud providers may find advantageous is to collaboratively exchange idle capacity on a peer-to-peer (P2P) basis within a federation. In this case, each provider in the federation acts both as a resource provider (outside peak hours) and as a resource consumer (during peak times). In particular private cloud providers, because of the usually limited amount of own resources, would benefit greatly from this exchange, thus allowing them to access a larger pool of resources when local demand is too high and can not be met using only local resources and resources that simply do not exist locally.
 
 \section{Objectives}
-The objective of this work is the implementation of a system that allows the creation of a network of favors, which works as a guarantor of justice, and that will work in a connectable way, giving generous support to different federation providers through specific connection modules for each provider, who will act as adapters, and following one of the justice algorithms for favors networks, also implemented as modules, so that the system is configurable and adaptable to the model of justice and to the federation provider of those who propose to use it , as follows in the following architecture diagram.
+The objective of this work is the implementation of a system that allows the creation of a network of favors, which works as a guarantor of justice, and that will work in a connectable way, giving generous support to different federation providers through specific connection modules for each provider, who will act as adapters, and following one of the justice algorithms for favors networks, also implemented as modules, so that the system is configurable and adaptable to the model of justice and to the federation provider of those who propose to use it, as follows in the following architecture diagram.
 
 \begin{center}
 \includegraphics[scale=0.4]{./image/NOF-architecture-generic.png}
@@ -34,15 +38,12 @@ The objective of this work is the implementation of a system that allows the cre
 
 \section{Schedule}
 
-The development of this study is planned to take place between January and June of the referent year of 2019 and will be divided into 4 main stages:
+The development of this study is planned to take place between January and June of the referent year of 2019 and will be divided into 3 main stages:
 \subsection{Development of application business logic}
-	In this step, components will be developed that address the business logic of the NOF service, including requisition middleware, federation member authentication services and favor accounting service, as well as favour allocation and resizer flows. quotas. be responsible for the implementation of justice, at the same time, the unit tests related to its components will be developed. The planned deadline for this activity is to do it throughout the month of January and February.
+	In the initial phase, the interfaces and the standard implementation of the components that address the business logic of the NOF service, including the requisition middleware, federation authentication service and favour accounting service, will be developed, in addition to constructing the flows the allocation of requisitions and the scaling of quotas, responsible for the implementation of justice, in parallel will be developed unit tests related to its components. The scheduled time for this activity is during the months of January and February.
 \subsection{Development of integration tests}
-    In this stage, the integration tests of the tool of the NOF component with the tool of provisioning and administration of federations of Fogbow hybrid clouds will be developed. The integration tests will be developed to test all of the most common streams of resource requests, Fogbow provision, special non-participant member detection cases, and resiliency in cases of error. The deadline for this activity is to do so throughout the month of March.
+    In this step, the integration tests of the tool of the NOF component with the tool of provisioning and administration of federations of Fogbow hybrid clouds will be developed. Integration testing will be developed to test all of the most common streams of resource requests, Fogbow sourcing, special non-member member detection cases, and resiliency in cases of error. The deadline for this activity is to do so throughout the month of March.
 \subsection{Write the paper}
     This last phase will be dedicated to the writing of the article, where all the decisions of software engineering and re results obtained with the NOF tool will be discussed for this work, which includes all the revisions of the article and possible revisions of architecture and / or implementation in the NOF it was planned to take 3 months, from April to June.
-
-\subsection{Activities}
-This work have 3 stages, the implementation of the Network of Favors as a component of the Fogbow project, this step can be separated in two steps, the implementation of business logic and after of the integration tests with the Fogbow ecosystem, after that creation of a experimentation model and metrics for test in by simulation and too in production application and get the results, the last activity is with the results of experiment make a study, writing a writing a paper with the study results.
-
+    
 \end{document}
