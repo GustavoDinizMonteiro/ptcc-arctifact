@@ -41,22 +41,24 @@ Working as a middleware for favors requests, and defining functional interfaces 
 
 During this work the default modules of connection with the federation provider, which will be the Fogbow (www.fogbowcloud.org), and the simple direct reciprocity justice algorithm will also be developed.
 
-\section{Schedule}
+\section{Activities and Schedule}
 
+\subsection{Activities}
 The development of this study is planned to take place between January and June of the referent year of 2019 and will be divided into 3 main stages:
 
-\begin{figure}
+\subsubsection{Development of application business logic}
+	In this step will be developed the interfaces and the default implementation of the components of the NOF service, in addition to constructing the flows the allocation of requisitions and the quota re-sizer.
+\subsubsection{Development of integration tests}
+   In this step, will be developed the integration tests of the NOF components with default modules to test all of the most common streams of resource requests, non-cooperative member detection and the platform resiliency.
+\subsubsection{Write the paper}
+    This last phase will be dedicated to the writing of the article, where all the decisions of software engineering and re results obtained with the NOF tool will be discussed for this work, which includes all the revisions of the article and possible revisions of architecture and/or implementation in the NOF.
+    
+\subsection{Schedule}
+\begin{figure}[h!]
     \centering
     \includegraphics[scale=0.35]{./image/TCC-schedule.png}
-    \caption{Schedule}
+    \caption{Activities Schedule}
 \end{figure}
-
-\subsection{Development of application business logic}
-	In the initial phase, the interfaces and the standard implementation of the components that address the business logic of the NOF service, including the requisition middleware, federation authentication service and favour accounting service, will be developed, in addition to constructing the flows the allocation of requisitions and the scaling of quotas, responsible for the implementation of justice, in parallel will be developed unit tests related to its components. The scheduled time for this activity is during the months of January and February.
-\subsection{Development of integration tests}
-    In this step, the integration tests of the tool of the NOF component with the tool of provisioning and administration of federations of Fogbow hybrid clouds will be developed. Integration testing will be developed to test all of the most common streams of resource requests, Fogbow sourcing, special non-member member detection cases, and resiliency in cases of error. The deadline for this activity is to do so throughout the month of March.
-\subsection{Write the paper}
-    This last phase will be dedicated to the writing of the article, where all the decisions of software engineering and re results obtained with the NOF tool will be discussed for this work, which includes all the revisions of the article and possible revisions of architecture and / or implementation in the NOF it was planned to take 3 months, from April to June.
 
 \begin{thebibliography}{9}
 
@@ -67,13 +69,12 @@ Parallel and Distributed Computing, vol. 67, no. 8, pp. 957 – 966, 2007.
 
 \bibitem{cloudburst}
 Marshall P, Keahey K, Freeman T. Elastic site: using clouds to elastically extend site resources. In: Conference on cluster, cloud, and grid computing
-(CCGRID); 2010. p. 43–52. doi:10.1109/CCGRID.2010.80.
+(CCGRID); 2010. p. 43–52.
 
 \bibitem{fairness-benefices}
 Marshall P, Keahey K, Freeman T. Elastic site: using clouds to elastically extend site resources. In: Conference on cluster, cloud, and grid computing
 (CCGRID); 2010. p. 43–52. doi:10.1109/CCGRID.2010.80.
-[2] Gomes ER, Vo QB, Kowalczyk R. Pure exchange markets for resource sharing in federated clouds. Concurrency Comput 2012;24(9):977–91. doi:10.1002/
-cpe.1659.
+[2] Gomes ER, Vo QB, Kowalczyk R. Pure exchange markets for resource sharing in federated clouds. Concurrency Comput 2012;24(9):977–91.
 \end{thebibliography}
     
 \end{document}
