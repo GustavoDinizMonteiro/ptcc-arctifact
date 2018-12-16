@@ -33,9 +33,11 @@ The objective of this work is the implementation of a system of network deployme
 
 Working as a middleware for favors requests, and defining functional interfaces that allow support to different providers of federations and justice algorithms for Network of Favors through specific modules for each provider and chosen justice algorithm that implement these interfaces, which will act as adapters, aiming to be a platform configurable and adaptable to the model of justice and to the provider of the federation of those who propose to use it.
 
-\begin{center}
-\includegraphics[scale=0.4]{./image/NOF-architecture-generic.png}
-\end{center}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.4]{./image/NOF-architecture-generic.png}
+    \caption{NOF Architecture}
+\end{figure}
 
 During this work the default modules of connection with the federation provider, which will be the Fogbow (www.fogbowcloud.org), and the simple direct reciprocity justice algorithm will also be developed.
 
@@ -43,9 +45,11 @@ During this work the default modules of connection with the federation provider,
 
 The development of this study is planned to take place between January and June of the referent year of 2019 and will be divided into 3 main stages:
 
-\begin{center}
-\includegraphics[scale=0.35]{./image/TCC-schedule.png}
-\end{center}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.35]{./image/TCC-schedule.png}
+    \caption{Schedule}
+\end{figure}
 
 \subsection{Development of application business logic}
 	In the initial phase, the interfaces and the standard implementation of the components that address the business logic of the NOF service, including the requisition middleware, federation authentication service and favour accounting service, will be developed, in addition to constructing the flows the allocation of requisitions and the scaling of quotas, responsible for the implementation of justice, in parallel will be developed unit tests related to its components. The scheduled time for this activity is during the months of January and February.
