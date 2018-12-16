@@ -21,12 +21,12 @@ This work will follow the project portfolio modality and aims to implement a pre
 Many organizations have extreme fluctuations of use, and during these peaks, they have to resort to public clouds to meet fleeting demand. The cost of such an action in itself can be expensive, which together with possible sub-utilization of the resources belonging to the organization can generates high costs. The objective of this work is to present a way of implantation and incentive justice on resources sharing in P2P systems, initially using the direct reciprocity model called Network of Favors. The model that will be used for small and medium-sized networks, for scenarios where repeated peer interaction is most likely and where these organizations could meet their demand at peak times and offer favors in under utilization, with guarantee of protection against uncooperative members. In addition, the network focuses on being a lightweight solution and designed to be a pluggable and adaptable element to the provider, using first-hand knowledge gained by each member through direct interaction with other peers.
 
 \section{The Problem}
-Organizations with varying demand patterns and utilization peaks often resort to public clouds to meet unexpected or short-term needs, thus escaping failures in meeting business demands and quality of service goals.
+Organizations with varying demand patterns and utilization peaks often resort to public clouds (cf. “cloud bursting”\cite{cloudburst}) to meet unexpected or short-term needs, thus escaping failures in meeting business demands and quality of service goals.
 However, outside of peak times, the resources belonging to these organizations may become inactive, which is a loss of efficiency.
 
 Under these circumstances, selling these surplus resources may be an interesting option for large private cloud providers, but not for smaller private providers.
 
-One alternative that small and medium-sized private cloud providers may find advantageous is to collaboratively exchange idle capacity on a peer-to-peer (P2P) basis within a federation. In this case, each provider in the federation acts both as a resource provider (outside peak hours) and as a resource consumer (during peak times). In particular private cloud providers, because of the usually limited amount of own resources, would benefit greatly from this exchange, thus allowing them to access a larger pool of resources when local demand is too high and can not be met using only local resources and resources that simply do not exist locally.
+One alternative that small and medium-sized private cloud providers may find advantageous is to collaboratively exchange idle capacity on a peer-to-peer (P2P) basis within a federation. In this case, each provider in the federation acts both as a resource provider (outside peak hours) and as a resource consumer (during peak times). In particular private cloud providers, because of the usually limited amount of own resources, would benefit greatly from this exchange\cite{fairness-benefices}, thus allowing them to access a larger pool of resources when local demand is too high and can not be met using only local resources and resources that simply do not exist locally.
 
 \section{Objectives}
 The objective of this work is the implementation of a system that allows the creation of a network of favors, which works as a guarantor of justice, and that will work in a connectable way, giving generous support to different federation providers through specific connection modules for each provider, who will act as adapters, and following one of the justice algorithms for favors networks, also implemented as modules, so that the system is configurable and adaptable to the model of justice and to the federation provider of those who propose to use it, as follows in the following architecture diagram.
@@ -51,10 +51,21 @@ The development of this study is planned to take place between January and June 
     This last phase will be dedicated to the writing of the article, where all the decisions of software engineering and re results obtained with the NOF tool will be discussed for this work, which includes all the revisions of the article and possible revisions of architecture and / or implementation in the NOF it was planned to take 3 months, from April to June.
 
 \begin{thebibliography}{9}
+
 \bibitem{nof} 
 N. Andrade, F. Brasileiro, W. Cirne, and M. Mowbray, “Automatic grid
 assembly by promoting collaboration in peer-to-peer grids,” Journal of
 Parallel and Distributed Computing, vol. 67, no. 8, pp. 957 – 966, 2007.
+
+\bibitem{cloudburst}
+Marshall P, Keahey K, Freeman T. Elastic site: using clouds to elastically extend site resources. In: Conference on cluster, cloud, and grid computing
+(CCGRID); 2010. p. 43–52. doi:10.1109/CCGRID.2010.80.
+
+\bibitem{fairness-benefices}
+Marshall P, Keahey K, Freeman T. Elastic site: using clouds to elastically extend site resources. In: Conference on cluster, cloud, and grid computing
+(CCGRID); 2010. p. 43–52. doi:10.1109/CCGRID.2010.80.
+[2] Gomes ER, Vo QB, Kowalczyk R. Pure exchange markets for resource sharing in federated clouds. Concurrency Comput 2012;24(9):977–91. doi:10.1002/
+cpe.1659.
 \end{thebibliography}
     
 \end{document}
