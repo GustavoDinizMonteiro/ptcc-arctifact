@@ -18,20 +18,20 @@ This work will follow the project portfolio modality and aims to implement a pre
 \paragraph{Mentor:} Francisco Vilar Brasileiro
 
 \section{Abstract}
-Many organizations have extreme fluctuations of use, and during these peaks, they have to resort to public clouds to meet fleeting demand. The cost of such an action in itself can be expensive, which together with possible sub-utilization of the resources belonging to the organization can generates high costs. The objective of this work is to present a way of implantation and incentive justice on resources sharing in P2P systems, initially using the direct reciprocity model called Network of Favors. The model that will be used for small and medium-sized networks, for scenarios where repeated peer interaction is most likely and where these organizations could meet their demand at peak times and offer favors in under utilization, with guarantee of protection against uncooperative members. In addition, the network focuses on being a lightweight solution and designed to be a pluggable and adaptable element to the provider, using first-hand knowledge gained by each member through direct interaction with other peers.
+Many organizations have extreme fluctuations of use, and during these peaks, they have to resort to public clouds to meet fleeting demand. The cost of such an action in itself can be expensive, which paired with possible sub-utilization organization's resources can generate high costs. The objective of this work is to present a tool to implement and incentive justice on resource sharing in P2P systems, initially using the direct reciprocity Network of Favors model. The direct reciprocity justice model that will be used for small and medium-sized networks, for scenarios where repeated peer interaction is most likely and where these organizations could meet their demand at peak times and offer favors in under utilization, with guarantee of protection against uncooperative members. In addition, the network focuses on being a lightweight solution, designed to be a pluggable and adaptable element to the provider, using first-hand knowledge gained by each member through direct interaction with other peers.
 
 \section{The Problem}
 Organizations with varying demand patterns and utilization peaks often resort to public clouds (cf. “cloud bursting”\cite{cloudburst}) to meet unexpected or short-term needs, thus escaping failures in meeting business demands and quality of service goals.
-However, outside of peak times, the resources belonging to these organizations may become inactive, which is a loss of efficiency.
+However, outside of peak times, the resources of theses organizations may become inactive, which is a loss of efficiency.
 
-Under these circumstances, selling these surplus resources may be an interesting option for large private cloud providers, but not for smaller private providers.
+Under these circumstances, selling this surplus of resources may be an interesting option for large private cloud providers, but not for smaller private providers.
 
 One alternative that small and medium-sized private cloud providers may find advantageous is to collaboratively exchange idle capacity on a peer-to-peer (P2P) basis within a federation. In this case, each provider in the federation acts both as a resource provider (outside peak hours) and as a resource consumer (during peak times). In particular private cloud providers, because of the usually limited amount of own resources, would benefit greatly from this exchange\cite{fairness-benefices}, thus allowing them to access a larger pool of resources when local demand is too high and can not be met using only local resources and resources that simply do not exist locally.
 
 \section{Objectives}
-The objective of this work is the implementation of a system of network deployment of favors that allows the sharing of resources in P2P networks, functioning as a guarantor of justice and connectable to the federation provider.
+The objective of this work is to implement a network deployment tool for favors that allows the sharing of resources in P2P networks, functioning as a guarantor of justice and can be easily connected to the federation provider.
 
-Working as a middleware for favors requests, and defining functional interfaces that allow support to different providers of federations and justice algorithms for Network of Favors through specific modules for each provider and chosen justice algorithm that implement these interfaces, which will act as adapters, aiming to be a platform configurable and adaptable to the model of justice and to the provider of the federation of those who propose to use it.
+The NOF provider will work as a middleware for favors requests, and defining functional interfaces that allow support to different federation providers and justice algorithms for Network of Favors through specific modules for each provider and chosen justice algorithm, which will act as adapters, aiming to be a platform configurable and adaptable to the model of justice and to the federation provider.
 
 \begin{figure}[h!]
     \centering
@@ -39,25 +39,25 @@ Working as a middleware for favors requests, and defining functional interfaces 
     \caption{NOF Architecture}
 \end{figure}
 
-During this work the default modules of connection with the federation provider, which will be the Fogbow (www.fogbowcloud.org), and the simple direct reciprocity justice algorithm will also be developed.
+During this work, the default connection module with the federation provider, which will be the Fogbow provider (www.fogbowcloud.org), and the simple direct reciprocity justice algorithm will be developed.
 
 \section{Activities and Schedule}
 
 \subsection{Activities}
-The development of this study is planned to be divided into 3 main stages:
+The development of this study was planned in 3 main stages:
 
 \begin{itemize}
     \item Development of application business logic: 
-	Will be developed the interfaces and the default implementation of the components of the NOF service, in addition to constructing the flows the allocation of requisitions and the quota re-sizer.
+	The interfaces and the default implementation of the components of the NOF service will be develop, in addition to constructing the flows the allocation of requisitions and the quota re-sizer.
 	\item Development of integration tests:
-	Will be developed the integration tests of the NOF components with default modules to test all of the most common streams of resource requests, non-cooperative member detection and the platform resiliency.
+	The integration tests of the NOF components with default modules will be develop to test all of the most common streams of resource requests, non-cooperative member detection and the platform resiliency.
 	\item Write the paper:
-	Dedicated to the writing of the article, where all the decisions of software engineering and re results obtained with the NOF tool will be discussed for this work, which includes all the revisions of the article and possible revisions of architecture and/or implementation in the NOF.
+	The article will be written, reporting all the decisions of software engineering and re results obtained with the NOF tool will be discussed for this work, which includes all the revisions of the article and possible revisions of architecture and/or implementation in the NOF.
 \end{itemize}
     
 \subsection{Schedule}
 
-The development of this study is planned take place between January and June of the referent year of 2019 and is described in next image shows the 3 main stages described above and all planned sub tasks.
+The development of this study is planned to take place between January and June of 2019 and is described in image 2 which shows the 3 main stages described above and all planned sub tasks.
 
 \begin{figure}[h!]
     \centering
